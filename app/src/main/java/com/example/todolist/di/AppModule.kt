@@ -1,16 +1,11 @@
 package com.example.todolist.di
 
+import com.example.todolist.data.repository.TaskRepositoryImpl
 import com.example.todolist.domain.repository.TaskRepository
 import com.example.todolist.domain.usecase.AddTaskUseCase
 import com.example.todolist.domain.usecase.DeleteTaskUseCase
 import com.example.todolist.domain.usecase.GetTaskUseCase
 import com.example.todolist.domain.usecase.UpdateTaskUseCase
-import com.example.todolist_jetpackcompose.data.repository.TaskRepositoryImpl
-import com.example.todolist_jetpackcompose.domain.repository.TaskRepository
-import com.example.todolist_jetpackcompose.domain.usecase.AddTaskUseCase
-import com.example.todolist_jetpackcompose.domain.usecase.DeleteTaskUseCase
-import com.example.todolist_jetpackcompose.domain.usecase.GetTaskUseCase
-import com.example.todolist_jetpackcompose.domain.usecase.UpdateTaskUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
