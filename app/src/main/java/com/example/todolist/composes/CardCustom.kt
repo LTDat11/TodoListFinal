@@ -18,11 +18,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.todolist.domain.model.Task
+import com.example.todolist.presentation.ToDoListViewModel
+import com.example.todolist.ui.theme.inversePrimaryLight
+import com.example.todolist.ui.theme.onTertiaryLight
 
 @Composable
 fun CardCustom(
@@ -39,7 +41,11 @@ fun CardCustom(
         colors =
             CardDefaults.cardColors(
                 containerColor =
-                    if (task.isCompleted) Color.Green.copy(alpha = 0.2f) else Color(0xB4EC6FC9),
+                    if (task.isCompleted) {
+                        onTertiaryLight
+                    } else {
+                        inversePrimaryLight
+                    },
             ),
     ) {
         Row(
