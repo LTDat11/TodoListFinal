@@ -1,6 +1,7 @@
 package com.example.todolist
 
 import android.content.Context
+import com.example.todolist.data.model.MyObjectBox
 import io.objectbox.BoxStore
 
 object ObjectBox {
